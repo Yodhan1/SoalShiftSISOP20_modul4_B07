@@ -77,7 +77,7 @@ void Enkrip_2(char *filename,size_t size){
         fwrite(buffer,sizeof(char),chunkSize,outputFile);
         fclose(outputFile);
 
-    } while ( chunkSize > 0 );
+    } while ( size > 0 );
 }
 
 void Denkrip_2(char *filename){
